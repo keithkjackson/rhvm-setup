@@ -1,2 +1,2 @@
 # rhvm-setup
-Playbooks for install a Red Hat Virtualization Manager
+Playbooks for installing a Red Hat Virtualization Manager
