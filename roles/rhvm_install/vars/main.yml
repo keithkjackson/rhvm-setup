@@ -1,0 +1,3 @@
+---
+install_type: external
+answer_loc: /tmp/rhvm_answers.conf

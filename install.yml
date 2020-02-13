@@ -1,0 +1,10 @@
+---
+- hosts: rhvm
+  become: yes
+  tasks:
+    - include_role:
+        name: sat_register
+    - include_role:
+        name: yum_update
+    - include_role:
+        name: rhvm_install
