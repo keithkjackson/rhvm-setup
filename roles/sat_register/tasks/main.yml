@@ -3,6 +3,7 @@
   yum:
     name: '{{ sat_url }}'
     state: present
+    validate_certs: no
 
 - name: Register to Satellite
   redhat_subscription:
