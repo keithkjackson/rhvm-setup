@@ -1,0 +1,10 @@
+---
+#profile variables
+aaa_user:
+aaa_server:
+aaa_pass:
+
+#auth variables for authz and authn
+aaa_profile_name:
+aaa_basedn:
+
