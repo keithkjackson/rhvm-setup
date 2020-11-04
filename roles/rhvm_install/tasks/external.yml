@@ -5,8 +5,8 @@
     state: present
 
 - name: Copy Engine-setup answer to /tmp/
-  copy:
-    src: files/rhvm_answers.conf
+  template:
+    src: rhvm_answers.conf.j2
     dest: '{{ answer_loc }}'
 
 - name: Perform automated RHV Manager Install
