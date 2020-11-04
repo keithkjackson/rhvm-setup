@@ -1,8 +1,14 @@
 ---
-- name: Install AAA by name LDAP packages
+- name: Check if ovirt-engine-extension-aaa-ldap-setup is installed
+  yum:
+    list: ovirt-engine-extension-aaa-ldap-setup
+  register: pkg_list
+
+- name: Install ovirt-engine-extension-aaa-ldap-setup if not exist
   yum:
     name: ovirt-engine-extension-aaa-ldap-setup
     state: latest
+  when: pkg_list.results | selectattr("yumstate", "match", "installed") | list | length == 0
 
 - name: Deploy profile
   template:
