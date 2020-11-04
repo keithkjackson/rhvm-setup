@@ -4,7 +4,3 @@
   service:
     name: ovirt-engine
     state: restarted
-- name: restart httpd
-  service:
-    name: httpd
-    state: restarted

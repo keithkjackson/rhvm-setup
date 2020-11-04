@@ -1,17 +1,7 @@
 ---
-- name: Install AAA packages
-  yum:
-    name: ovirt-engine-extension-aaa-*
-    state: latest
-
 - name: Install AAA by name LDAP packages
   yum:
     name: ovirt-engine-extension-aaa-ldap-setup
-    state: latest
-
-- name: Install AAA by name MISC packages
-  yum:
-    name: ovirt-engine-extension-aaa-misc
     state: latest
 
 - name: Deploy profile
@@ -23,7 +13,7 @@
   notify:
     - restart ovirt-engine
 
-- name: Deploy normal ldap authn
+- name: Deploy authn
   template:
     src: authn
     dest: /etc/ovirt-engine/extensions.d/{{ aaa_profile_name }}-authn.properties
