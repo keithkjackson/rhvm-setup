@@ -1,4 +1,4 @@
 ---
-activate_key: RHVH
-org: Home
-sat_url: "https://satellite.lab.home/pub/katello-ca-consumer-latest.noarch.rpm"
+activate_key: KEY_NAME
+org: ORG_NAME
+sat_url: "https://server.example.com/pub/katello-ca-consumer-latest.noarch.rpm"

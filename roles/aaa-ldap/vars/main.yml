@@ -1,10 +1,9 @@
 ---
 #profile variables
-aaa_user:
-aaa_server:
-aaa_pass:
+aaa_user: uid=user,cn=users,cn=accounts,dc=example,dc=com
+aaa_server: server.example.com
+aaa_pass: somepassword
 
 #auth variables for authz and authn
-aaa_profile_name:
-aaa_basedn:
-
+aaa_profile_name: TEST
+aaa_basedn: dc=example,dc=com
